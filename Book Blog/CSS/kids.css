@@ -1,0 +1,89 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+}
+.navBar {
+    background-color: #4d6277;
+    color: white;
+    padding: 50px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+.navBar .title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 26px;
+    font-family: roboto;
+    font-weight: 550;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+.navBar .menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 10px;
+}
+.navBar a {
+    text-decoration: none;
+    color: inherit;
+}
+.navBar h1 {
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+.navBar h3 {
+    font-size: 18px;
+    font-weight: 100;
+    cursor: pointer;
+    transition: color 0.3s ease, font-size 0.3s ease;
+    margin: 0 80px;
+}
+.navBar h3:hover {
+    color: #17a2b8;
+}
+.navBar a:target h3,
+.navBar a.active h3 {
+    font-size: 24px;
+}
+.bookGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px 80px;
+    padding: 20px;
+    margin: 0 50px;
+}
+.book {
+    background-color: white;
+    border: 1px solid #ddd;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    height: 550px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.HomepageNews {
+    font-family: 'Roboto', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 600;
+    font-size: 36px;
+    text-align: center;
+    margin-top: 20px;
+    color: #72808f;
+    background-color: #e9ecef;
+    padding: 20px;
+    border-radius: 30px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    max-width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
