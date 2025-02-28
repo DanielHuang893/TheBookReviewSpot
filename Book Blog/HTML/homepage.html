@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TheBookReviewSpot</title>
     <link rel="stylesheet" href="../CSS/homepage.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
 <body>
     <div class="navBar">
@@ -12,12 +13,15 @@
             <h1>TheBookReviewSpot</h1>
         </div>
         <div class="menu">
-            <a href="fiction.html"><h3 class="fiction">Fiction</h3></a>
-            <a href="non-fiction.html"><h3 class="non-fiction">Non-fiction</h3></a>
-            <a href="fantasy.html"><h3>Fantasy</h3></a>
-            <a href="kids.html"><h3>Kids'</h3></a>
-            <a href="adventure.html"><h3>Adventure</h3></a>
-            <a href="popular.html"><h3>Popular</h3></a>
+            <a href="fiction.html" class="navItem">Fiction</a>
+            <a href="non-fiction.html" class="navItem">Non-fiction</a>
+            <a href="fantasy.html" class="navItem">Fantasy</a>
+            <a href="kids.html" class="navItem">Kids'</a>
+            <a href="adventure.html" class="navItem">Adventure</a>
+            <a href="popular.html" class="navItem">Popular</a>
+            <div class="contact">
+                <a href="contact.html" class="Contact"><i class="fas fa-phone-alt"></i> Contact</a>
+            </div>
         </div>
     </div>
     <h2 class="HomepageNews">What's New?</h2>
@@ -38,5 +42,15 @@
         <div class="book">Book 14</div>
         <div class="book">Book 15</div>
     </div>
+    <script>
+        window.onscroll = function() {
+            var navBar = document.querySelector('.navBar');
+            if (document.documentElement.scrollTop > 100) {
+                navBar.classList.add('smaller');
+            } else {
+                navBar.classList.remove('smaller');
+            }
+        };
+    </script>
 </body>
 </html>
