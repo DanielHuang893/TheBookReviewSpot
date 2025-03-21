@@ -4,53 +4,68 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TheBookReviewSpot</title>
-    <link rel="stylesheet" href="../CSS/homepage.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../CSS/homepage.css">
 </head>
 <body>
     <div class="navBar">
-        <div class="title">
-            <h1>TheBookReviewSpot</h1>
-        </div>
+        <div class="title">TheBookReviewSpot</div>
         <div class="menu">
-            <a href="fiction.html" class="navItem">Fiction</a>
-            <a href="non-fiction.html" class="navItem">Non-fiction</a>
-            <a href="fantasy.html" class="navItem">Fantasy</a>
-            <a href="kids.html" class="navItem">Kids'</a>
-            <a href="adventure.html" class="navItem">Adventure</a>
-            <a href="popular.html" class="navItem">Popular</a>
-            <div class="contact">
-                <a href="contact.html" class="Contact"><i class="fas fa-phone-alt"></i> Contact</a>
-            </div>
+            <a href="fiction.html">Fiction</a>
+            <a href="non-fiction.html">Non-fiction</a>
+            <a href="fantasy.html">Fantasy</a>
+            <a href="kids.html">Kids'</a>
+            <a href="adventure.html">Adventure</a>
+            <a href="popular.html">Popular</a>
+            <a href="contact.html" class="contact"><i class="fas fa-phone-alt"></i> Contact</a>
         </div>
     </div>
+
     <h2 class="HomepageNews">What's New?</h2>
+
     <div class="bookGrid">
-        <div class="book">Book 1</div>
-        <div class="book">Book 2</div>
-        <div class="book">Book 3</div>
-        <div class="book">Book 4</div>
-        <div class="book">Book 5</div>
-        <div class="book">Book 6</div>
-        <div class="book">Book 7</div>
-        <div class="book">Book 8</div>
-        <div class="book">Book 9</div>
-        <div class="book">Book 10</div>
-        <div class="book">Book 11</div>
-        <div class="book">Book 12</div>
-        <div class="book">Book 13</div>
-        <div class="book">Book 14</div>
-        <div class="book">Book 15</div>
+        <div class="book">
+            <img src="https://via.placeholder.com/150" alt="Book 1">
+            <h3>Book 1</h3>
+            <p>Author Name</p>
+        </div>
+        <div class="book">
+            <img src="https://via.placeholder.com/150" alt="Book 2">
+            <h3>Book 2</h3>
+            <p>Author Name</p>
+        </div>
+        <div class="book">
+            <img src="https://via.placeholder.com/150" alt="Book 3">
+            <h3>Book 3</h3>
+            <p>Author Name</p>
+        </div>
+        <div class="book">
+            <img src="https://via.placeholder.com/150" alt="Book 4">
+            <h3>Book 4</h3>
+            <p>Author Name</p>
+        </div>
+        <div class="book">
+            <img src="https://via.placeholder.com/150" alt="Book 5">
+            <h3>Book 5</h3>
+            <p>Author Name</p>
+        </div>
+        <div class="book">
+            <img src="https://via.placeholder.com/150" alt="Book 6">
+            <h3>Book 6</h3>
+            <p>Author Name</p>
+        </div>
     </div>
-    <script>
-        window.onscroll = function() {
-            var navBar = document.querySelector('.navBar');
-            if (document.documentElement.scrollTop > 100) {
-                navBar.classList.add('smaller');
-            } else {
-                navBar.classList.remove('smaller');
-            }
-        };
-    </script>
+
+    <footer>
+        <div class="social-links">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+        <p>&copy; 2023 TheBookReviewSpot. All rights reserved.</p>
+    </footer>
+
+    <script src="../JS/homepage.js"></script> 
 </body>
 </html>

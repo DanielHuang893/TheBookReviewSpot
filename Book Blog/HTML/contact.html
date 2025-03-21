@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Book Review Spot</title>
+    <link rel="stylesheet" href="../CSS/contact.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1 class="title" onclick="location.href='../HTML/homepage.html'">TheBookReviewSpot</h1>
+        <h6 class="back-hint">^<br>!<br>!<br>Click to go back</h6>
+        <nav>
+            <button class="About" onclick="location.href='../HTML/aboutMe.html'">About Me</button>
+        </nav>
+    </header>
+    <main>
+        <h1 class="contact-heading">Contact Form</h1>
+        <section class="message-box">
+            <h2>Send a Message</h2>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" placeholder="Write your message here..." required></textarea>
+                
+                <button class="submit-button">Submit</button>
+            </form>
+        </section>
+    </main>
+</body>
+</html>

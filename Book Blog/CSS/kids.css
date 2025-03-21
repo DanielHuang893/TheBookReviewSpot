@@ -70,6 +70,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 .HomepageNews {
     font-family: 'Roboto', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -87,3 +88,14 @@ body {
     margin-right: auto;
 }
 
+.Book1{
+    height: 520px;
+    width: 340px;
+    margin-left: 7px;
+    margin-top:25px;
+}
+
+.book:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}

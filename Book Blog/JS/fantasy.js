@@ -6,3 +6,4 @@ window.onscroll = function () {
         navBar.classList.remove('smaller');
     }
 };
+

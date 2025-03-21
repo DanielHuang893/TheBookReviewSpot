@@ -1,81 +1,91 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
     background-color: #f8f9fa;
     margin: 0;
     padding: 0;
-}
-
-.contact {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    border: 1px solid #ddd;
-    padding: 10px 20px;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    transition: background-color 0.3s ease, box-shadow 0.3s ease;
-}
-
-.contact:hover {
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    color: #333;
 }
 
 .navBar {
     background-color: #4d6277;
     color: white;
-    padding: 50px 20px;
+    padding: 30px;
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
     align-items: center;
     position: sticky;
     top: 0;
     z-index: 1000;
-    transition: padding 0.3s ease;
+    transition: all 0.5s ease;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
 .navBar.smaller {
-    padding: 10px 100px;
+    padding: 15px 25px; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 .navBar .title {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    font-size: 24px;
+    font-weight: 700;
+    font-family: 'Merriweather', serif;
+    transition: font-size 0.3s ease; 
+}
+
+.navBar.smaller .title {
     font-size: 20px;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 450;
-    margin-top: 0px;
-    margin-bottom: 20px;
 }
 
 .navBar .menu {
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    margin-top: 10px;
+    gap: 15px;
 }
 
 .navBar a {
     text-decoration: none;
-    color: inherit;
-    padding: 10px 20px;
-    margin: 0 10px;
+    color: white;
+    padding: 20px 25px;
     border-radius: 5px;
     transition: background-color 0.3s ease, color 0.3s ease;
 }
-
 
 .navBar a:hover {
     background-color: #3b4a5c;
     color: #17a2b8;
 }
 
+.contact {
+    background-color: #17a2b8;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.contact:hover {
+    background-color: #128fa3;
+}
+
+.HomepageNews {
+    font-family: 'Merriweather', serif;
+    font-weight: 700;
+    font-size: 36px;
+    text-align: center;
+    margin-top: 40px;
+    color: #4d6277;
+    padding: 20px;
+    max-width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .bookGrid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 50px 80px;
-    padding: 20px;
-    margin: 0 50px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    padding: 40px 20px;
+    margin: 0 auto;
+    max-width: 1200px;
 }
 
 .book {
@@ -83,31 +93,60 @@ body {
     border: 1px solid #ddd;
     padding: 20px;
     text-align: center;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    height: 500px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    height: 530px;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 10px;
 }
 
 .book:hover {
-    transform: scale(1.1);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transform: translateY(-10px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
 }
 
-.HomepageNews {
-    font-family: 'Roboto', serif;
-    font-weight: 600;
-    font-size: 36px;
+.book img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.book h3 {
+    font-size: 20px;
+    margin: 10px 0;
+    color: #4d6277;
+}
+
+.book p {
+    font-size: 14px;
+    color: #666;
+}
+
+footer {
+    background-color: #4d6277;
+    color: white;
     text-align: center;
-    margin-top: 20px;
-    color: #72808f;
-    background-color: #e9ecef;
     padding: 20px;
-    border-radius: 30px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
-    max-width: 70%;
-    margin-left: auto;
-    margin-right: auto;
+    margin-top: 40px;
+}
+
+footer .social-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 10px;
+}
+
+footer .social-links a {
+    color: white;
+    font-size: 20px;
+    transition: color 0.3s ease;
+}
+
+footer .social-links a:hover {
+    color: #17a2b8;
 }
