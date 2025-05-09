@@ -1,0 +1,160 @@
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+.navBar {
+    background-color: #4d6277;
+    color: white;
+    padding: 50px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navBar .title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 26px;
+    font-weight: 550;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.navBar .title a {
+    text-decoration: none;
+    color: white;
+}
+
+.navBar .menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.navBar .menu a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.navBar h3 {
+    font-size: 18px;
+    font-weight: 100;
+    cursor: pointer;
+    transition: color 0.3s ease, font-size 0.3s ease;
+    margin: 0 30px;
+}
+
+.navBar h3:hover {
+    color: #17a2b8;
+}
+
+.bookContainer {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.bookTitle {
+    font-size: 42px;
+    color: #4d6277;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.bookAuthor {
+    font-size: 24px;
+    color: #6c757d;
+    text-align: center;
+    margin-bottom: 40px;
+    font-weight: 400;
+}
+
+.bookContent {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    background-color: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.bookCover {
+    width: 500px;
+    height: auto;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease;
+}
+
+.bookCover:hover {
+    transform: scale(1.03);
+}
+
+.bookDetails {
+    flex: 1;
+    min-width: 300px;
+    max-width: 600px;
+}
+
+.bookDescription {
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.bookDescription h3 {
+    color: #4d6277;
+    margin-top: 25px;
+}
+
+.purchaseInfo {
+    background-color: #f1f3f5;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.purchaseInfo h3 {
+    margin-top: 0;
+    color: #4d6277;
+}
+
+.purchaseInfo ul {
+    padding-left: 20px;
+}
+
+.purchaseInfo a {
+    color: #17a2b8;
+    text-decoration: none;
+}
+
+.purchaseInfo a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .navBar .menu {
+        flex-wrap: wrap;
+    }
+    
+    .navBar h3 {
+        margin: 10px 15px;
+    }
+    
+    .bookContent {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .bookDetails {
+        width: 100%;
+    }
+}
